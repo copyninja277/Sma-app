@@ -1,0 +1,52 @@
+/* Fullscreen container with gradient background */
+.home-container {
+  height: 80vh;
+  width: 100%;
+  padding-top: -30px; /* offset for fixed header */
+  background: linear-gradient(#e4dccf, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+/* Main title */
+.home-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #212529
+}
+
+/* Feature list */
+.home-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #007bff;
+}
+
+.home-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.home-feature-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(120, 206, 108);
+  color: rgb(32, 0, 128);
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

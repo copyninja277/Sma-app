@@ -1,0 +1,31 @@
+/* Layout base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  padding-top: 30px; /* height of the fixed header */
+  height: calc(100vh - 30px);
+  min-height: 80vh;
+}
+
+
+/* Main content container */
+.main-content {
+  /**padding: 1rem;*/
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* When sidebar is open */
+.main-content.with-sidebar {
+  margin-left: 200px; /* matches the sidebar width */
+}
+
+/* When sidebar is closed */
+.main-content.full-width {
+  margin-left: 0;
+}

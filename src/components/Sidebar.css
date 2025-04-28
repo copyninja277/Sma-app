@@ -1,0 +1,91 @@
+/* Sidebar.css */
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 60px; /* below header */
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  padding: 1rem;
+  background-color: #001c30;
+  border-right: 1px solid #ccc;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  z-index: 998;
+  color: white;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Toggle button */
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 80px;
+  z-index: 999;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+/* Position when sidebar is open (just beside it) */
+.sidebar-toggle-btn.right {
+  left: 244px; /* 200px width + 10px gap */
+}
+
+/* Position when sidebar is closed */
+.sidebar-toggle-btn.left {
+  left: 10px;
+}
+
+.sidebar-toggle-btn:hover {
+  background: #eee;
+}
+
+.sidebar-toggle-btn:active {
+  background: #b5b1b1;
+  color: white;
+}
+
+/* Sidebar content styles */
+.sidebar h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar li a:hover {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+}
